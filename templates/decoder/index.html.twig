@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Decodeur!{% endblock %}
+
+{% block body %}
+<div>
+    {% if code is defined %}
+    <p>Bravo le code est : {{ code }}</p>
+{% else %}
+{% if wrong is defined %}
+    <p>Mauvais code !</p>
+{% endif %}
+
+    <p>Entre le code :</p>
+    {{ form(form) }}
+{% endif %}
+
+</div>
+{% endblock %}
