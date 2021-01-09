@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RankingController!{% endblock %}
+
+{% block body %}
+
+<ul>
+{% for user in sheets %}
+    <li>User n°{{ loop.index }} :
+        {% for data in user %}
+            {{ data }},
+        {% endfor %}
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}
