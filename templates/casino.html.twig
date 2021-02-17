@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Casino | {% endblock %}
+
+{% block body %}
+<section class="classement">
+    <img src="{{ asset('img/enseigne.png') }}" alt="enseigne" class="classement__enseigne" data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000">
+    <ul class="classement__liste">
+        {% if sheets[0] is defined %}
+        <li class="classement__liste--element"><i class="fas fa-dice-one"></i><span class="classement__name">Pierre BatCiseaux</span><span class="classement__points">500 pts</span></li>
+        {% else %}
+        <li class="classement__liste--element"><i class="fas fa-dice-one"></i><span class="classement__name">-</span><span class="classement__points">0 pts</span></li>
+        {% endif %}
+
+        {% if sheets[1] is defined %}
+        <li class="classement__liste--element"><i class="fas fa-dice-two"></i><span class="classement__name">Corentin</span><span class="classement__points">400 pts</span></li>
+        {% else %}
+        <li class="classement__liste--element"><i class="fas fa-dice-two"></i><span class="classement__name">-</span><span class="classement__points">0 pts</span></li>
+        {% endif %}
+
+        {% if sheets[2] is defined %}
+        <li class="classement__liste--element"><i class="fas fa-dice-three"></i><span class="classement__name">Loris</span><span class="classement__points">400 pts</span></li>
+        {% else %}
+        <li class="classement__liste--element"><i class="fas fa-dice-three"></i><span class="classement__name">-</span><span class="classement__points">0 pts</span></li>
+        {% endif %}
+
+        {% for user in sheets|slice(3) %}
+            <li class="classement__liste--element"><span class="classement__range">{{ user[1] }}</span><span class="classement__name">{{ user[0] }}</span><span class="classement__points">200 pts</span></li>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+<section class="lot">
+    <h2 class="lot__title">A Gagner</h2>
+    <div class="lot__present">
+        
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Décodeur | {% endblock %}
+
+{% block body %}
+<section class="dechiffrage">
+    <h2 class="dechiffrage__title">Table de déchiffrage</h2>
+    <div class="dechiffrage__table" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
+        <img src="{{ asset('img/symbol1.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol2.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol3.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol4.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol5.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol6.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol7.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol8.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol9.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol10.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol11.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol12.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol13.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol14.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol15.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol16.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol17.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol18.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol19.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol20.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol21.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol22.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol23.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol24.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol25.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol26.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol27.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol28.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol29.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol30.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol31.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+        <img src="{{ asset('img/symbol32.jpg') }}" alt="symbol" class="dechiffrage__symbol">
+    </div>
+</section>
+<section class="decodeur">
+    <h2 class="decodeur__title">Décodeur</h2>
+    {% if code is defined %}
+        <div class="decodeur__message">Bravo le code est : {{ code }}</div>
+    {% else %}
+        {% if wrong is defined %}
+            <div class="decodeur__message">Mauvais code !</div>
+        {% endif %}
+    {% endif %}
+    {{ form_start(form, {'attr': {'class': 'decodeur__form'}}) }}
+    {{ form_widget(form.Decodeur, {'attr': {'class': 'decodeur__enter', 'placeholder': 'Entrez le code'}}) }}
+    {{ form_widget(form.Decode, {'attr': {'class': 'decodeur__button'}, 'label': 'TEST'}) }}
+    {{ form_end(form) }}
+</section>
+{% endblock %}
