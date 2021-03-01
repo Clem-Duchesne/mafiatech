@@ -12,16 +12,24 @@ use Symfony\Contracts\Cache\ItemInterface;
 
 class CasinoController extends AbstractController
 {
-    const CACHE_SECONDS_DURATION = 5;
+    const CACHE_SECONDS_DURATION = 10;
+
+    private function cmp($a, $b) {
+        if (count($a) < 4 || count($b) < 4) {
+            return -1;
+        }
+        if ($a[2] == $b[2]) {
+            return 0;
+        }
+        return ($a[2] < $b[2]) ? -1 : 1;
+    }
 
     private function getSheet($client) {
         $service = new Google_Service_Sheets($client);
 
-        // FIXME
-        // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
-        $spreadsheetId = '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms';
-        $range = 'Class Data!A2:E';
-        // FIXME
+        // https://docs.google.com/spreadsheets/d/1nY_G4i-JpBZQlJ9A4ihybNerAbEWFNYpl4LmQvx5wOA/edit?usp=sharing
+        $spreadsheetId = '1nY_G4i-JpBZQlJ9A4ihybNerAbEWFNYpl4LmQvx5wOA';
+        $range = 'Sheet1!A2:D';
 
         $response = $service->spreadsheets_values->get($spreadsheetId, $range);
         $values = $response->getValues();
@@ -37,6 +45,7 @@ class CasinoController extends AbstractController
         $sheets = $pool->get('google_sheets', function (ItemInterface $item) use ($client) {
             $item->expiresAfter($this::CACHE_SECONDS_DURATION);
             $computedValue = $this->getSheet($client);
+            usort($computedValue, [$this, 'cmp']);
             return $computedValue;
         });
 
