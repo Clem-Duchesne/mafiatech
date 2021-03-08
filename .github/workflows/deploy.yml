@@ -11,8 +11,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: SamKirkland/FTP-Deploy-Action@4.0.0
+    - run: sudo apt-get install lftp
+
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         password: ${{ secrets.PASSWORD }}
+
+    - name: Remove Cache folder
+      run: lftp ${{ secrets.HOST }} -u ${{ secrets.USER }},${{ secrets.PASSWORD }} -e "rm -rf var/cache/; quit"
