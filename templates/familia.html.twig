@@ -14,10 +14,12 @@
                         <img src="{{ asset('img/VP-F.png') }}" alt="Vice présidente" class="respo">
                             <span class="organigramme__role">Vice presidente extérieure</span>
                     </div>
-                    <div class="organigramme__card-back">
+                    {% if jeudi %}
+                    <div aclass="organigramme__card-back">
                         <img src="{{ asset('img/ambre.jpg') }}" alt="ambre" class="organigramme__pp">
                         <span class="organigramme__name">Ambre Guibal</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
             
@@ -28,10 +30,12 @@
                         <img src="{{ asset('img/tresorier.png') }}" alt="Trésorier" class="respo">
                         <span class="organigramme__role">Tresorier</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/yann.jpg') }}" alt="yann" class="organigramme__pp">
                         <span class="organigramme__name">Yann Becker</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
             
@@ -41,10 +45,12 @@
                         <img src="{{ asset('img/président.png') }}" alt="Président" class="respo">
                         <span class="organigramme__role">President</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/jah.jpg') }}" alt="jah" class="organigramme__pp">
                         <span class="organigramme__name">Tom Amalberti</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
 
@@ -54,10 +60,12 @@
                         <img src="{{ asset('img/secretaire.png') }}" alt="Secrétaire" class="respo">
                         <span class="organigramme__role">Secretaire</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/emilie.jpg') }}" alt="emilie" class="organigramme__pp">
                         <span class="organigramme__name">Emilie Morin</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
 
@@ -67,10 +75,12 @@
                         <img src="{{ asset('img/VP-H.png') }}" alt="Vice président" class="respo">
                         <span class="organigramme__role">Vice president intérieur</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/jeremy.jpg') }}" alt="jeremy" class="organigramme__pp">
                         <span class="organigramme__name">Jeremy Seban</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
             
@@ -82,10 +92,12 @@
                         <img src="{{ asset('img/tresorier.png') }}" alt="Vice trésorier">
                         <span class="organigramme__role">Co trésorier</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/tom.jpg') }}" alt="tom" class="organigramme__pp ">
                         <span class="organigramme__name">Tom Da Costa</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card">
@@ -94,10 +106,12 @@
                         <img src="{{ asset('img/RR.png') }}" alt="respo rezo" class="respo">
                         <span class="organigramme__role">Respo Reseau</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/chloe.jpg') }}" alt="chloe" class="organigramme__pp">
                         <span class="organigramme__name">Chloé Pelet</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card">
@@ -106,10 +120,12 @@
                         <img src="{{ asset('img/secretaire.png') }}" alt="Vice secrétaire">
                         <span class="organigramme__role">Co secrétaire</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/manon.jpg') }}" alt="tom" class="organigramme__pp ">
                         <span class="organigramme__name">Manon Saout-jadé</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
 
@@ -126,10 +142,12 @@
                         <img src="{{ asset('img/goodies.png') }}" alt="team goodies">
                         <span class="organigramme__role">Respo goodies</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/norman.jpg') }}" alt="norman" class="organigramme__pp">
                         <span class="organigramme__name">Norman Maury</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -138,10 +156,12 @@
                         <img src="{{ asset('img/goodies.png') }}" alt="team goodies">
                         <span class="organigramme__role">Respo goodies</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/lou.jpg') }}" alt="lou" class="organigramme__pp">
                         <span class="organigramme__name">Lou Lacquement</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
             </div>
@@ -151,10 +171,12 @@
                     <img src="{{ asset('img/goodies.png') }}" alt="respo goodies" class="respo">
                     <span class="organigramme__role">Respo Goodies</span>
                 </div>
+                {% if jeudi %}
                 <div class="organigramme__card-back">
                     <img src="{{ asset('img/titouan.jpg') }}" alt="titouan" class="organigramme__pp">
                     <span class="organigramme__name">Titouan Huard</span>
                 </div>
+                {% endif %}
                 </div>
             </div>
         </div>
@@ -168,10 +190,12 @@
                     <img src="{{ asset('img/ddrs-F.png') }}" alt="respo ddrs" class="respo">
                     <span class="organigramme__role">Respo RS</span>
                 </div>
+                {% if mardi %}
                 <div class="organigramme__card-back">
                     <img src="{{ asset('img/cecile.jpg') }}" alt="cecile" class="organigramme__pp">
                     <span class="organigramme__name">Cécile Esserméant</span>
                 </div>
+                {% endif %}
                 </div>
             </div>
             <div class="range-side">
@@ -181,10 +205,12 @@
                         <img src="{{ asset('img/ddrs-F.png') }}" alt="team ddrs">
                         <span class="organigramme__role">Respo DD</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/julia.jpg') }}" alt="julia" class="organigramme__pp">
                         <span class="organigramme__name">Julia Fezard</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -193,10 +219,12 @@
                         <img src="{{ asset('img/ddrs-H.png') }}" alt="team ddrs">
                         <span class="organigramme__role">Respo prev</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/francois.jpg') }}" alt="francois" class="organigramme__pp">
                         <span class="organigramme__name">François Vagneur</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
             </div>
@@ -210,10 +238,12 @@
                     <img src="{{ asset('img/com-H.png') }}" alt="respo com" class="respo">
                     <span class="organigramme__role">Respo Com</span>
                 </div>
+                {% if jeudi %}
                 <div class="organigramme__card-back">
                     <img src="{{ asset('img/martin.jpg') }}" alt="martin" class="organigramme__pp">
                     <span class="organigramme__name">Martin Verrier</span>
                 </div>
+                {% endif %}
                 </div>
             </div>
             <div class="range-down wrap">
@@ -223,10 +253,12 @@
                         <img src="{{ asset('img/com-F.png') }}" alt="team com">
                         <span class="organigramme__role">Co Respo Com</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/eve.jpg') }}" alt="eve" class="organigramme__pp">
                         <span class="organigramme__name">Eve Poitevin</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -235,10 +267,12 @@
                         <img src="{{ asset('img/com-F.png') }}" alt="team com">
                         <span class="organigramme__role">Respo Multimédia</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/clemence.jpg') }}" alt="clemence" class="organigramme__pp">
                         <span class="organigramme__name">Clémence Duchesne</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 
@@ -248,10 +282,12 @@
                         <img src="{{ asset('img/com-H.png') }}" alt="team com">
                         <span class="organigramme__role">Respo graphisme</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/quentin.jpg') }}" alt="quentin" class="organigramme__pp">
                         <span class="organigramme__name">Quentin Diémahave</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -260,10 +296,12 @@
                         <img src="{{ asset('img/com-H.png') }}" alt="team com">
                         <span class="organigramme__role">Respo Web</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/corentin.jpg') }}" alt="corentin" class="organigramme__pp">
                         <span class="organigramme__name">Corentin Musard</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -272,10 +310,12 @@
                         <img src="{{ asset('img/com-H.png') }}" alt="team com">
                         <span class="organigramme__role">Respo WAVS</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/baptiste.jpg') }}" alt="baptiste" class="organigramme__pp">
                         <span class="organigramme__name">Baptiste Rozé</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -284,10 +324,12 @@
                         <img src="{{ asset('img/com-H.png') }}" alt="team com">
                         <span class="organigramme__role">Respo WAVS</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/alexis.jpg') }}" alt="alexis" class="organigramme__pp">
                         <span class="organigramme__name">Alexis Joubin</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -296,10 +338,12 @@
                         <img src="{{ asset('img/com-H.png') }}" alt="team com">
                         <span class="organigramme__role">Respo Vidéos</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/loulou.jpg') }}" alt="louis" class="organigramme__pp">
                         <span class="organigramme__name">Louis Bonnet-Eymard</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
             </div>
@@ -312,10 +356,12 @@
                         <img src="{{ asset('img/part-H.png') }}" alt="respo part" class="respo">
                         <span class="organigramme__role">Respo Part</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/antoine.jpg') }}" alt="antoine" class="organigramme__pp">
                         <span class="organigramme__name">Antoine Nicolaï</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="range-down">
@@ -325,10 +371,12 @@
                             <img src="{{ asset('img/part-F.png') }}" alt="team part">
                             <span class="organigramme__role">Respo Part</span>
                         </div>
+                        {% if mardi %}
                         <div class="organigramme__card-back">
                             <img src="{{ asset('img/laurine.jpg') }}" alt="laurine" class="organigramme__pp">
                             <span class="organigramme__name">Laurine Deschamps</span>
                         </div>
+                        {% endif %}
                         </div>
                     </div>
                     <div class="organigramme__card no-respo">
@@ -337,10 +385,12 @@
                             <img src="{{ asset('img/part-H.png') }}" alt="team part">
                             <span class="organigramme__role">Respo Part</span>
                         </div>
+                        {% if mardi %}
                         <div class="organigramme__card-back">
                             <img src="{{ asset('img/emeric.jpg') }}" alt="emeric" class="organigramme__pp">
                             <span class="organigramme__name">Emeric Breton</span>
                         </div>
+                        {% endif %}
                         </div>
                     </div>
                 </div>
@@ -354,10 +404,12 @@
                     <img src="{{ asset('img/logistique-F.png') }}" alt="respo logistique" class="respo">
                     <span class="organigramme__role">Respo Logistique</span>
                 </div>
+                {% if jeudi %}
                 <div class="organigramme__card-back">
                     <img src="{{ asset('img/mathilde.jpg') }}" alt="mathilde" class="organigramme__pp">
                     <span class="organigramme__name">Mathilde Hamm</span>
                 </div>
+                {% endif %}
                 </div>
             </div>
             <div class="range-down wrap event">
@@ -367,10 +419,12 @@
                         <img src="{{ asset('img/logistique-H.png') }}" alt="team event">
                         <span class="organigramme__role">Respo soirée</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/louisb.jpg') }}" alt="louis" class="organigramme__pp">
                         <span class="organigramme__name">Louis Bendler</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -379,10 +433,12 @@
                         <img src="{{ asset('img/logistique-H.png') }}" alt="team event">
                         <span class="organigramme__role">Respo activités</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/loris.jpg') }}" alt="loris" class="organigramme__pp">
                         <span class="organigramme__name">Loris Mottino</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -391,10 +447,12 @@
                         <img src="{{ asset('img/logistique-F.png') }}" alt="team event">
                         <span class="organigramme__role">Respo activités</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/charlene.jpg') }}" alt="charlene" class="organigramme__pp">
                         <span class="organigramme__name">Charlène Velez</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -403,10 +461,12 @@
                         <img src="{{ asset('img/logistique-H.png') }}" alt="team event">
                         <span class="organigramme__role">Respo Restauration</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/louisd.jpg') }}" alt="louis" class="organigramme__pp">
                         <span class="organigramme__name">Louis Darnaud</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -415,10 +475,12 @@
                         <img src="{{ asset('img/logistique-H.png') }}" alt="team event">
                         <span class="organigramme__role">Respo soirée</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/martins.jpg') }}" alt="martin" class="organigramme__pp">
                         <span class="organigramme__name">Martin Sergeant</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -427,10 +489,12 @@
                         <img src="{{ asset('img/logistique-H.png') }}" alt="team event">
                         <span class="organigramme__role">Respo soirée</span>
                     </div>
+                    {% if mardi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/taillot.jpg') }}" alt="thomas" class="organigramme__pp">
                         <span class="organigramme__name">Thomas Taillot</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -439,10 +503,12 @@
                         <img src="{{ asset('img/logistique-H.png') }}" alt="team event">
                         <span class="organigramme__role">Respo restauration</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/hugo.jpg') }}" alt="hugo" class="organigramme__pp">
                         <span class="organigramme__name">Hugo Perret</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
                 <div class="organigramme__card no-respo">
@@ -451,10 +517,12 @@
                         <img src="{{ asset('img/logistique-H.png') }}" alt="team event">
                         <span class="organigramme__role">Co respo logistique</span>
                     </div>
+                    {% if jeudi %}
                     <div class="organigramme__card-back">
                         <img src="{{ asset('img/raph.jpg') }}" alt="raph" class="organigramme__pp">
                         <span class="organigramme__name">Raphaël de Badereau</span>
                     </div>
+                    {% endif %}
                     </div>
                 </div>
 
