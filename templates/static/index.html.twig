@@ -2,7 +2,10 @@
 
 {% block body %}
 <section class="presentation">
-    <img class="presentation__logo" src="{{ asset('img/logo.png') }}" alt="logo">
+    <div class="presentation__hide">
+        <img class="presentation__logo" src="{{ asset('img/logo.png') }}" alt="logo">
+        <img src="{{ asset('img/symbol.png') }}" alt="symbol" class="presentation__symbol">
+    </div>
     <h1 class="presentation__list-name" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">Mafiatech</h1>
     <h3 class="presentation__description" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">Campagnes BDE 2021</h3>
 </section>
