@@ -3,15 +3,15 @@
 {% block body %}
 <section class="presentation">
     <div class="presentation__hide">
-        <img class="presentation__logo" src="{{ asset('img/logo.png') }}" alt="logo">
-        <<img src="{% if jeudi %} {{ asset('img/symbol.png') }} {% else %} {{ asset('img/logo.png') }} {% endif %}" alt="symbol" class="presentation__symbol">
+        <img class="presentation__logo {% if jeudi %}presentation__logo-animation{% endif %}" src="{{ asset('img/logo.png') }}" alt="logo">
+        {% if jeudi %}<img src="{{ asset('img/symbol.png') }}" alt="symbol" class="presentation__symbol">{% endif %}
     </div>
     <h1 class="presentation__list-name" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">Mafiatech</h1>
     <h3 class="presentation__description" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">Campagnes BDE 2021</h3>
 </section>
 <section class="storytelling">
     <iframe
-        src="https://www.youtube.com/embed/xlcywgEMuGI?autoplay=1">
+        src="https://www.youtube.com/embed/xlcywgEMuGI">
     </iframe>
 </section>
 <section class="famille">

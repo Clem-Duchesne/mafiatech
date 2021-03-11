@@ -15,7 +15,7 @@ class FamiliaController extends AbstractController
     public function index(Request $request): Response
     {
         return $this->render('familia.html.twig', [
-            'mardi' => (new \DateTime("now") > new \DateTime("2021-03-06 20:00:00")),
+            'mardi' => (new \DateTime("now") > new \DateTime("2021-03-16 20:00:00")),
             'jeudi' => (new \DateTime("now") > new \DateTime("2021-03-18 20:00:00")),
         ]);
     }

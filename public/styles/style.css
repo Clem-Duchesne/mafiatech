@@ -127,7 +127,7 @@ body {
     opacity: 1;
     margin: 0 auto;
 }
-.presentation__hide:hover .presentation__logo{
+.presentation__hide:hover .presentation__logo-animation{
     animation: shaking 1.5s;
     transition-delay: 1.5s;
     opacity: 0;
