@@ -15,7 +15,7 @@ class IndexController extends AbstractController
     public function index(Request $request): Response
     {
         return $this->render('index.html.twig', [
-            'jeudi' => (new \DateTime("now") > new \DateTime("2021-03-18 20:00:00")),
+            'jeudi' => (new \DateTime("now") > new \DateTime("2021-03-18 18:00:00")),
         ]);
     }
 }

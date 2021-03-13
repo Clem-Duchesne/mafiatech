@@ -29,7 +29,7 @@ class CasinoController extends AbstractController
 
         // https://docs.google.com/spreadsheets/d/1nY_G4i-JpBZQlJ9A4ihybNerAbEWFNYpl4LmQvx5wOA/edit?usp=sharing
         $spreadsheetId = '1nY_G4i-JpBZQlJ9A4ihybNerAbEWFNYpl4LmQvx5wOA';
-        $range = 'Sheet1!A2:D';
+        $range = 'Sheet1!A3:E';
 
         $response = $service->spreadsheets_values->get($spreadsheetId, $range);
         $values = $response->getValues();
@@ -45,6 +45,9 @@ class CasinoController extends AbstractController
         $sheets = $pool->get('google_sheets', function (ItemInterface $item) use ($client) {
             $item->expiresAfter($this::CACHE_SECONDS_DURATION);
             $computedValue = $this->getSheet($client);
+            if ($computedValue == null) {
+                return array();
+            }
             usort($computedValue, [$this, 'cmp']);
             return $computedValue;
         });
