@@ -543,6 +543,7 @@ body {
     height: auto;
     width: 80%;
     object-fit: contain;
+    margin: 0 auto;
 }
 /*DECODEUR*/
 .dechiffrage {
