@@ -538,6 +538,12 @@ body {
     border-bottom: 3px dotted #a4141e;
     padding-bottom: 1%;
 }
+.lot__image {
+    margin-top: 2%;
+    height: auto;
+    width: 80%;
+    object-fit: contain;
+}
 /*DECODEUR*/
 .dechiffrage {
     margin-top: 5%;
