@@ -17,6 +17,15 @@ class DecodeurController extends AbstractController
     {
         $form = $this->createForm(DecodeurType::class);
         $form->handleRequest($request);
+
+        $jeudi = (new \DateTime("now") > new \DateTime("2021-03-18 10:00:00"));
+        if ($jeudi === False) {
+            return $this->render('decodeur.html.twig', [
+                'jeudi' => $jeudi,
+                'form' => $form->createView(),
+            ]);
+        }
+
         if ($form->isSubmitted() && $form->isValid()) {
             $data = $form->getData();
 
