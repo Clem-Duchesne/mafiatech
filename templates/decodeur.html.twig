@@ -43,8 +43,8 @@
 </section>
 <section class="decodeur">
     <h2 class="decodeur__title">Décodeur</h2>
-    {% if jeudi is defined %}
-        <div class="decodeur__message">Le jeu de piste commence ce vendredi 18 Mars à 10h !</div>
+    {% if vendredi is defined %}
+        <div class="decodeur__message">Le jeu de piste commence ce vendredi 19 Mars à 10h !</div>
     {% elseif code is defined %}
         <div class="decodeur__message">Bravo le code est : {{ code }}</div>
     {% else %}
