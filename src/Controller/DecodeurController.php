@@ -48,7 +48,7 @@ class DecodeurController extends AbstractController
 
             ,"524" => "Bravo tu arrives à la fin de ce jeu de piste ! Maintenant rentre les numéros des symboles, dans le meme ordre que tu les as trouvés."
 
-            ,"294734134524" => "Afin de valider ton défi, il faut que tu remplisses ce formulaire : https://docs.google.com/forms/d/e/1FAIpQLScR8xmuJDa6IxOLFmIWDH0K4hw6CHFboq8IjANi0HkZhZ-sQA/viewform?usp=sf_link"
+            ,"294734134524" => "Afin de valider ton défi, il faut que tu remplisses ce formulaire : <a href=\"https://docs.google.com/forms/d/e/1FAIpQLScR8xmuJDa6IxOLFmIWDH0K4hw6CHFboq8IjANi0HkZhZ-sQA/viewform?usp=sf_link\">clique ici</a>"
             ];
 
             if (array_key_exists($data['Decodeur'], $decode)) {
