@@ -1,5 +1,9 @@
 # Site Mafiatech liste BDE Polytech Grenoble 2021
 
+- [mafiatech.fr](https://mafiatech.fr)
+- Sheets read when accessing `/casino`: [link](https://docs.google.com/spreadsheets/d/1nY_G4i-JpBZQlJ9A4ihybNerAbEWFNYpl4LmQvx5wOA/edit?usp=sharing)
+- Auto deploy using GitHub Actions
+
 ## To run the server
 
 ```sh
