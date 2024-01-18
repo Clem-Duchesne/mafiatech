@@ -1,17 +1,7 @@
 # Site Mafiatech liste BDE Polytech Grenoble 2021
 
-- [mafiatech.fr](https://mafiatech.fr)
-- Sheets read when accessing `/casino`: [link](https://docs.google.com/spreadsheets/d/1nY_G4i-JpBZQlJ9A4ihybNerAbEWFNYpl4LmQvx5wOA/edit?usp=sharing)
-- Auto deploy using GitHub Actions
+Site web réalisé dans le cadre des campagnes BDE (Bureau des étudiants) de Polytech Grenoble. Il présente les propositions de fois de la liste BDE ainsi que les membres de celle-ci.
+- [mafiatech.fr](https://mafiatech.fr) (le site n'est plus distribué)
 
-## To run the server
-
-```sh
-symfony serve
-```
-
-## Docs
-- https://github.com/googleapis/google-api-php-client
-- https://developers.google.com/sheets/api/quickstart/php
-- https://symfony.com/doc/current/cache.html
-- https://developers.google.com/sheets/api/guides/concepts
+Projet en collaboration avec : 
+- Corentin Musard
